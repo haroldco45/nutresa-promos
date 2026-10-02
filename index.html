@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Promociones Nutresa · Octubre 2026 · Distrileco</title>
+<meta name="description" content="Salchicha Zenú en lata: docena de 13. Saltín Pentataco: pague 24, lleve 25. Saltín Taco Día: pague 48, lleve 52. Todo octubre en Distrileco.">
+<meta name="theme-color" content="#D6001C">
+
+<!-- Compartir (WhatsApp, Facebook, X) -->
+<meta property="og:title" content="Promociones Nutresa · Todo octubre en Distrileco">
+<meta property="og:description" content="Zenú en lata: docena de 13. Saltín Pentataco: pague 24, lleve 25. Saltín Taco Día: pague 48, lleve 52. Pídale a su vendedor.">
+<meta property="og:image" content="https://haroldco45.github.io/nutresa-promos/og.png">
+<meta property="og:url" content="https://haroldco45.github.io/nutresa-promos/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Promociones Nutresa · Todo octubre en Distrileco">
+<meta name="twitter:description" content="Zenú en lata: docena de 13. Saltín Pentataco: pague 24, lleve 25. Saltín Taco Día: pague 48, lleve 52.">
+<meta name="twitter:image" content="https://haroldco45.github.io/nutresa-promos/og.png">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --rojo:#D6001C; --rojo-osc:#A80016; --negro:#000; --blanco:#fff;
+  --gris:#6E6E6E; --linea:#E3E3E3; --fondo2:#F5F5F5; --verde:#128C3E;
+  --cond:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --base:"Barlow",Arial,Helvetica,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--base);color:var(--negro);background:var(--blanco);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select{font:inherit}
+:focus-visible{outline:3px solid var(--rojo);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Barra */
+.barra{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--negro);color:var(--blanco)}
+.barra .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.marca{white-space:nowrap;font-family:var(--cond);font-weight:800;font-size:22px;letter-spacing:.2px;text-decoration:none}
+.marca span{color:var(--rojo)}
+.barra nav{display:flex;gap:4px}
+.barra nav a{font-family:var(--cond);font-weight:700;font-size:17px;text-decoration:none;padding:8px 10px;border-radius:2px}
+.barra nav a:hover{background:#222}
+.barra nav a.pedir{background:var(--rojo)}
+@media (max-width:560px){.barra nav a:not(.pedir){display:none}}
+
+/* Portada */
+.portada{border-top:8px solid var(--rojo);padding:40px 0 28px}
+.portada p.de{margin:0;font-weight:600;font-size:18px}
+.portada h1{font-family:var(--cond);font-weight:800;font-size:clamp(54px,11vw,120px);line-height:.9;margin:6px 0 18px;color:var(--rojo);letter-spacing:-1px}
+.portada .intro{max-width:56ch;font-size:19px;margin:0 0 22px}
+.reloj{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;border-left:6px solid var(--negro);padding:6px 0 6px 14px}
+.reloj .cuenta{font-family:var(--cond);font-weight:800;font-size:34px;line-height:1}
+.reloj small{color:var(--gris);font-size:15px}
+
+.logos{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.logos img{height:88px;width:auto}
+.logos .por{font-family:var(--cond);font-weight:800;font-size:34px;color:var(--rojo)}
+@media (max-width:560px){.logos img{height:66px}}
+
+/* Promos */
+.promos{padding:12px 0 40px}
+.promo{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:0;border:2px solid var(--negro);margin-top:28px;background:var(--blanco)}
+.promo:nth-child(even){grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.promo:nth-child(even) .foto{order:2;border-left:2px solid var(--negro);border-right:0}
+.foto{position:relative;background:var(--blanco);border-right:2px solid var(--negro);min-height:300px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.foto img{width:100%;height:100%;object-fit:contain;padding:52px 20px 20px;position:absolute;inset:0}
+.foto .falta{font-family:var(--cond);font-weight:700;font-size:26px;color:var(--gris);text-align:center;padding:20px;line-height:1.1}
+.foto .falta small{display:block;font-family:var(--base);font-weight:500;font-size:14px;margin-top:8px}
+.foto .sello{position:absolute;top:0;left:0;background:var(--rojo);color:var(--blanco);font-family:var(--cond);font-weight:800;font-size:20px;padding:6px 14px;z-index:2}
+.dato{padding:26px 26px 24px;display:flex;flex-direction:column}
+.dato h2{font-family:var(--cond);font-weight:700;font-size:30px;line-height:1.05;margin:0}
+.dato .pres{color:var(--gris);margin:4px 0 14px;font-size:16px}
+.cifra{display:flex;align-items:center;gap:14px;margin:4px 0 6px}
+.cifra .n{font-family:var(--cond);font-weight:800;font-size:clamp(80px,12vw,128px);line-height:.85}
+.cifra .n.lleva{color:var(--rojo)}
+.cifra .tri{width:0;height:0;border-top:18px solid transparent;border-bottom:18px solid transparent;border-left:26px solid var(--negro)}
+.cifra-pie{display:flex;justify-content:space-between;max-width:330px;font-weight:600;font-size:15px;color:var(--gris);margin-bottom:14px}
+.regalo{font-size:18px;margin:0 0 18px}
+.regalo b{color:var(--rojo)}
+.cant{margin-top:auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.paso{display:flex;align-items:stretch;border:2px solid var(--negro)}
+.paso button{width:46px;border:0;background:var(--blanco);font-family:var(--cond);font-weight:800;font-size:26px;cursor:pointer}
+.paso button:hover{background:var(--fondo2)}
+.paso input{width:62px;text-align:center;border:0;border-left:2px solid var(--negro);border-right:2px solid var(--negro);font-family:var(--cond);font-weight:800;font-size:24px;-moz-appearance:textfield}
+.paso input::-webkit-outer-spin-button,.paso input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.cant .res{font-size:15px;line-height:1.35}
+.cant .res b{font-family:var(--cond);font-size:20px}
+@media (max-width:760px){
+  .promo,.promo:nth-child(even){grid-template-columns:1fr}
+  .promo:nth-child(even) .foto{order:0;border-left:0}
+  .foto,.promo:nth-child(even) .foto{border-right:0;border-bottom:2px solid var(--negro);min-height:260px}
+}
+
+/* Pedido */
+.pedido{background:var(--negro);color:var(--blanco);padding:44px 0}
+.pedido h2,.vendedores h2{font-family:var(--cond);font-weight:800;font-size:clamp(40px,7vw,64px);line-height:.95;margin:0 0 10px}
+.pedido .sub{color:#BDBDBD;max-width:58ch;margin:0 0 24px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;max-width:760px}
+.form label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+.form input,.form select{width:100%;padding:13px 12px;border:2px solid #fff;background:#000;color:#fff;border-radius:0;font-size:17px}
+.form .full{grid-column:1/-1}
+.resumen{grid-column:1/-1;border-top:2px solid #333;padding-top:16px}
+.resumen ul{list-style:none;margin:0;padding:0}
+.resumen li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #222}
+.resumen li span:last-child{font-weight:600;text-align:right}
+.resumen .vacio{color:#BDBDBD}
+.btn-wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rojo);color:#fff;border:0;padding:16px 26px;font-family:var(--cond);font-weight:800;font-size:22px;cursor:pointer;text-decoration:none}
+.btn-wa:hover{background:var(--rojo-osc)}
+.btn-wa[disabled]{background:#444;cursor:not-allowed}
+.aviso{font-size:13px;color:#9E9E9E;margin-top:14px;max-width:70ch}
+.error{color:#FF8A8A;font-weight:600;margin-top:10px;min-height:1.4em}
+@media (max-width:620px){.form{grid-template-columns:1fr}}
+
+/* Vendedores */
+.vendedores{padding:44px 0}
+.vendedores .sub{color:var(--gris);max-width:58ch;margin:0 0 22px}
+.lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));column-gap:32px;border-top:2px solid var(--negro)}
+.lista li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 4px;border-bottom:1px solid var(--linea)}
+.lista .nom{font-weight:600}
+.lista .tel{color:var(--gris);font-size:15px}
+.lista .acc{display:flex;gap:6px}
+.lista .acc a{font-family:var(--cond);font-weight:700;font-size:16px;text-decoration:none;padding:7px 12px;border:2px solid var(--negro)}
+.lista .acc a.wa{background:var(--negro);color:#fff}
+.lista .acc a:hover{background:var(--rojo);border-color:var(--rojo);color:#fff}
+.zona{margin-top:26px;font-size:16px}
+.zona b{font-family:var(--cond);font-size:20px}
+
+/* Instalar y pie */
+.instalar{display:none;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--blanco);border:2px solid var(--negro);padding:12px 14px;align-items:center;justify-content:space-between;gap:12px;max-width:520px;margin:0 auto}
+.instalar.ver{display:flex}
+.instalar button{border:0;background:var(--negro);color:#fff;font-family:var(--cond);font-weight:700;font-size:17px;padding:9px 14px;cursor:pointer}
+.instalar button.no{background:transparent;color:var(--negro)}
+footer{border-top:8px solid var(--rojo);background:var(--negro);color:#BDBDBD;padding:22px 0 30px;font-size:14px}
+footer p{margin:4px 0}
+footer b{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="wrap">
+    <a class="marca" href="#inicio">Distrileco <span>×</span> Nutresa</a>
+    <nav aria-label="Secciones">
+      <a href="#promos">Promociones</a>
+      <a href="#vendedores">Vendedores</a>
+      <a class="pedir" href="#pedido">Hacer pedido</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="portada">
+    <div class="wrap">
+      <div class="logos">
+        <img src="img/logo-distrileco.jpg" alt="Distrileco" width="338" height="360">
+        <span class="por" aria-hidden="true">×</span>
+        <img src="img/logo-nutresa.jpg" alt="Grupo Nutresa" width="279" height="360">
+      </div>
+      <p class="de">Promociones Nutresa en Distrileco Caucasia</p>
+      <h1>Todo octubre</h1>
+      <p class="intro">Tres promociones para surtir la tienda con más unidades por el mismo pedido. Escoja cuántas lleva, mire cuánto le sale de regalo y mándele el pedido a su vendedor por WhatsApp.</p>
+      <div class="reloj" aria-live="polite">
+        <span class="cuenta" id="cuenta">Cargando…</span>
+        <small id="cuenta-pie">Del 1 al 31 de octubre de 2026, hora de Colombia</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="promos" id="promos" aria-label="Promociones">
+    <div class="wrap" id="lista-promos"></div>
+  </section>
+
+  <section class="pedido" id="pedido">
+    <div class="wrap">
+      <h2>Arme su pedido</h2>
+      <p class="sub">Las cantidades que escogió arriba ya están aquí. Ponga el nombre de su tienda, escoja su vendedor y el pedido se abre listo en WhatsApp.</p>
+      <div class="form">
+        <div>
+          <label for="tienda">Nombre de la tienda</label>
+          <input id="tienda" autocomplete="organization" placeholder="Ej.: Tienda La Esquina">
+        </div>
+        <div>
+          <label for="municipio">Municipio o barrio</label>
+          <input id="municipio" autocomplete="address-level2" placeholder="Ej.: Caucasia, El Palmar">
+        </div>
+        <div class="full">
+          <label for="vendedor">Su vendedor</label>
+          <select id="vendedor"><option value="">Escoja su vendedor</option></select>
+        </div>
+        <div class="resumen" aria-live="polite">
+          <ul id="resumen"></ul>
+        </div>
+        <div class="full">
+          <button class="btn-wa" id="enviar" type="button">Enviar pedido por WhatsApp</button>
+          <div class="error" id="error" role="alert"></div>
+          <p class="aviso">Esta página no guarda ni envía sus datos a ningún servidor. El nombre de la tienda y el vendedor se recuerdan solo en este celular para el próximo pedido, y el pedido sale directo por su WhatsApp. Tratamiento de datos según la Ley 1581 de 2012.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vendedores" id="vendedores">
+    <div class="wrap">
+      <h2>Nuestros vendedores</h2>
+      <p class="sub">Llame o escríbale directo a su vendedor de Distrileco.</p>
+      <ul class="lista" id="lista-vend"></ul>
+      <p class="zona"><b>Cobertura total.</b> Bajo Cauca, Córdoba, Nordeste, Urabá y Sucre.</p>
+    </div>
+  </section>
+</main>
+
+<div class="instalar" id="instalar" role="dialog" aria-label="Instalar la app">
+  <span>Instale las promociones en su celular</span>
+  <span><button class="no" id="inst-no" type="button">Ahora no</button><button id="inst-si" type="button">Instalar</button></span>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><b>Distrileco Caucasia S.A.S.</b> · NIT 800183056-9 · Caucasia, Antioquia</p>
+    <p>Promociones válidas del 1 al 31 de octubre de 2026 o hasta agotar existencias. Imágenes de referencia.</p>
+    <p>Desarrollada por <b>Vibras Positivas HM</b> — Derechos de Autor Reservados</p>
+  </div>
+</footer>
+
+<script>
+const PROMOS = [
+  { id:"zenu", nombre:"Salchicha Zenú en lata", pres:"Salchichas Viena · lata de 150 g, 7 unidades · por docena de latas", foto:"img/salchicha-zenu.jpg",
+    paga:12, lleva:13, unidad:"latas", grupo:"docena", grupos:"docenas", sello:"Docena de 13" },
+  { id:"pentataco", nombre:"Galleta Saltín Pentataco", pres:"Saltín Noel Tradicional · 5 tacos, 441 g · por paca", foto:"img/saltin-pentataco.jpg",
+    paga:24, lleva:25, unidad:"unidades", grupo:"paca", grupos:"pacas", sello:"Pague 24, lleve 25" },
+  { id:"tacodia", nombre:"Galleta Saltín Taco Día", pres:"Saltín Noel Tradicional · taco de 102 g · por paca", foto:"img/saltin-taco-dia.jpg",
+    paga:48, lleva:52, unidad:"unidades", grupo:"paca", grupos:"pacas", sello:"Pague 48, lleve 52" }
+];
+
+const VENDEDORES = [
+  ["Alexander Sánchez","3113896080"],
+  ["Claudia González","3117253552"],
+  ["Danny Troncoso","3137671011"],
+  ["Gleydis Enamorado","3232913136"],
+  ["Harold Marín","3117700431"],
+  ["Juan Carlos Quintana","3204077185"],
+  ["Juan Carlos Zabala","3232911903"],
+  ["Julieth Rodríguez","3135780204"],
+  ["Lorenzo Castellar","3113896092"],
+  ["Roy Reyes","3108480777"],
+  ["Rubén Abendaño","3148010448"]
+];
+
+const FIN = new Date("2026-10-31T23:59:59-05:00");
+const INICIO = new Date("2026-10-01T00:00:00-05:00");
+const cant = {zenu:0,pentataco:0,tacodia:0};
+const $ = s => document.querySelector(s);
+const fmtTel = t => t.replace(/(\d{3})(\d{3})(\d{4})/,"$1 $2 $3");
+const plural = (n,a,b) => n===1?a:b;
+
+function guardar(k,v){try{localStorage.setItem("nutresa-oct26:"+k,v)}catch(e){}}
+function leer(k){try{return localStorage.getItem("nutresa-oct26:"+k)||""}catch(e){return ""}}
+
+/* Promos */
+function sinFoto(img,nombre){const f=img.parentNode;img.remove();f.insertAdjacentHTML("beforeend",`<div class="falta">${nombre}<small>Foto pendiente</small></div>`)}
+function pintarPromos(){
+  $("#lista-promos").innerHTML = PROMOS.map(p => `
+    <article class="promo" id="p-${p.id}">
+      <div class="foto">
+        <span class="sello">${p.sello}</span>
+        <img src="${p.foto}" alt="${p.nombre}" loading="lazy"
+             onerror="sinFoto(this,'${p.nombre}')">
+      </div>
+      <div class="dato">
+        <h2>${p.nombre}</h2>
+        <p class="pres">${p.pres}</p>
+        <div class="cifra" aria-label="Pague ${p.paga}, lleve ${p.lleva}">
+          <span class="n">${p.paga}</span><span class="tri" aria-hidden="true"></span><span class="n lleva">${p.lleva}</span>
+        </div>
+        <div class="cifra-pie"><span>Paga ${p.paga}</span><span>Lleva ${p.lleva}</span></div>
+        <p class="regalo">Por cada ${p.grupo}, <b>${p.lleva-p.paga} ${plural(p.lleva-p.paga,p.unidad.replace(/s$/,""),p.unidad)} de regalo</b>.</p>
+        <div class="cant">
+          <div class="paso">
+            <button type="button" aria-label="Menos ${p.grupos}" data-menos="${p.id}">−</button>
+            <input type="number" min="0" max="999" inputmode="numeric" value="0" id="c-${p.id}" aria-label="${p.grupos} de ${p.nombre}">
+            <button type="button" aria-label="Más ${p.grupos}" data-mas="${p.id}">+</button>
+          </div>
+          <div class="res" id="r-${p.id}">Escoja cuántas ${p.grupos} lleva</div>
+        </div>
+      </div>
+    </article>`).join("");
+
+  document.querySelectorAll("[data-mas]").forEach(b=>b.onclick=()=>cambiar(b.dataset.mas,1));
+  document.querySelectorAll("[data-menos]").forEach(b=>b.onclick=()=>cambiar(b.dataset.menos,-1));
+  PROMOS.forEach(p=>{
+    $("#c-"+p.id).addEventListener("input",e=>{
+      let v=parseInt(e.target.value,10); if(isNaN(v)||v<0)v=0; if(v>999)v=999;
+      cant[p.id]=v; actualizar(p.id,false);
+    });
+  });
+}
+function cambiar(id,d){cant[id]=Math.max(0,Math.min(999,cant[id]+d));actualizar(id,true)}
+function actualizar(id,escribir){
+  const p=PROMOS.find(x=>x.id===id), n=cant[id];
+  if(escribir) $("#c-"+id).value=n;
+  $("#r-"+id).innerHTML = n
+    ? `Paga <b>${(n*p.paga).toLocaleString("es-CO")}</b> y recibe <b>${(n*p.lleva).toLocaleString("es-CO")}</b> ${p.unidad}<br>${(n*(p.lleva-p.paga)).toLocaleString("es-CO")} de regalo`
+    : `Escoja cuántas ${p.grupos} lleva`;
+  pintarResumen();
+}
+
+/* Pedido */
+function pintarResumen(){
+  const items=PROMOS.filter(p=>cant[p.id]>0);
+  $("#resumen").innerHTML = items.length
+    ? items.map(p=>`<li><span>${p.nombre}: ${cant[p.id]} ${plural(cant[p.id],p.grupo,p.grupos)}</span><span>${(cant[p.id]*p.lleva).toLocaleString("es-CO")} ${p.unidad}</span></li>`).join("")
+    : `<li class="vacio">Todavía no ha escogido productos. Suba las cantidades en cada promoción.</li>`;
+}
+function enviar(){
+  const err=$("#error"); err.textContent="";
+  const items=PROMOS.filter(p=>cant[p.id]>0);
+  const tienda=$("#tienda").value.trim(), muni=$("#municipio").value.trim(), vi=$("#vendedor").value;
+  if(!items.length){err.textContent="Escoja al menos un producto subiendo la cantidad en la promoción.";return}
+  if(!tienda){err.textContent="Escriba el nombre de la tienda para que el vendedor sepa de quién es el pedido.";$("#tienda").focus();return}
+  if(vi===""){err.textContent="Escoja su vendedor para enviarle el pedido.";$("#vendedor").focus();return}
+  const [nom,tel]=VENDEDORES[+vi];
+  guardar("tienda",tienda);guardar("municipio",muni);guardar("vendedor",vi);
+  const fecha=new Intl.DateTimeFormat("es-CO",{timeZone:"America/Bogota",dateStyle:"long",timeStyle:"short"}).format(new Date());
+  let m=`Hola ${nom.split(" ")[0]}, pedido de promociones Nutresa de octubre:\n\n`;
+  items.forEach(p=>{m+=`• ${p.nombre}: ${cant[p.id]} ${plural(cant[p.id],p.grupo,p.grupos)} (${p.sello.toLowerCase()}) = ${cant[p.id]*p.lleva} ${p.unidad}\n`});
+  m+=`\nTienda: ${tienda}`; if(muni)m+=`\nMunicipio/barrio: ${muni}`;
+  m+=`\nFecha: ${fecha}`;
+  window.open(`https://wa.me/57${tel}?text=${encodeURIComponent(m)}`,"_blank","noopener");
+}
+
+/* Vendedores */
+function pintarVendedores(){
+  $("#vendedor").insertAdjacentHTML("beforeend",VENDEDORES.map(([n],i)=>`<option value="${i}">${n}</option>`).join(""));
+  $("#lista-vend").innerHTML = VENDEDORES.map(([n,t])=>`
+    <li><div><div class="nom">${n}</div><div class="tel">${fmtTel(t)}</div></div>
+    <div class="acc"><a href="tel:+57${t}" aria-label="Llamar a ${n}">Llamar</a>
+    <a class="wa" href="https://wa.me/57${t}?text=${encodeURIComponent("Hola "+n.split(" ")[0]+", quiero información de las promociones Nutresa de octubre.")}" target="_blank" rel="noopener" aria-label="WhatsApp a ${n}">WhatsApp</a></div></li>`).join("");
+}
+
+/* Cuenta regresiva en hora de Colombia */
+function reloj(){
+  const ahora=new Date(), c=$("#cuenta"), pie=$("#cuenta-pie");
+  if(ahora<INICIO){c.textContent="Arranca el 1 de octubre";return}
+  if(ahora>FIN){c.textContent="Promoción terminada";pie.textContent="Pregúntele a su vendedor por las promociones de noviembre";$("#enviar").disabled=true;return}
+  const ms=FIN-ahora, d=Math.floor(ms/864e5), h=Math.floor(ms%864e5/36e5), mi=Math.floor(ms%36e5/6e4);
+  c.textContent = d>0 ? `Quedan ${d} ${plural(d,"día","días")} y ${h} h` : `Quedan ${h} h y ${mi} min`;
+}
+
+/* Instalación PWA */
+let diferido=null;
+window.addEventListener("beforeinstallprompt",e=>{
+  e.preventDefault(); diferido=e;
+  if(leer("noinstalar")!=="1") $("#instalar").classList.add("ver");
+});
+$("#inst-si").onclick=async()=>{ if(!diferido)return; diferido.prompt(); await diferido.userChoice; diferido=null; $("#instalar").classList.remove("ver"); };
+$("#inst-no").onclick=()=>{ guardar("noinstalar","1"); $("#instalar").classList.remove("ver"); };
+window.addEventListener("appinstalled",()=>$("#instalar").classList.remove("ver"));
+
+/* Arranque */
+pintarPromos(); pintarVendedores(); pintarResumen(); reloj(); setInterval(reloj,30000);
+$("#tienda").value=leer("tienda"); $("#municipio").value=leer("municipio");
+const vg=leer("vendedor"); if(vg!==""&&VENDEDORES[+vg]) $("#vendedor").value=vg;
+$("#enviar").onclick=enviar;
+if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+</script>
+</body>
+</html>
